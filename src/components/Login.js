@@ -1,10 +1,10 @@
 import styles from '../styles/Login.module.css'
 import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -38,6 +38,7 @@ function Login() {
                 } else {
                     loginId = data.NSX.LoginId;
                     alert('Login ' + loginId)
+                    navigate('/fax-app');
                     handleSetShare();
                     setIsLoggedIn(true);
                 }
