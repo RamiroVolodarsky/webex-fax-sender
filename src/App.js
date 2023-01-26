@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename="/fax-sender-webex">
+    <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/fax-app" element={<FaxApp />} />
