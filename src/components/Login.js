@@ -1,11 +1,10 @@
 import styles from '../styles/Login.module.css'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import FaxApp from './FaxApp';
 
 function Login() {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
